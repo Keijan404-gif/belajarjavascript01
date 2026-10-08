@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1>Belajar Javascript</h1>
+
+    
+    <script>
+document.write("Halo Dunia!");
+
+var nilaiTugas = Number(prompt("Masukkan nilai tugas"));
+var nilaiUts = Number(prompt("Masukkan nilai UTS"));
+var nilaiUas = Number(prompt("Masukkan nilai UAS"));
+
+var nilai = (nilaiTugas * 0.3) + 
+            (nilaiUts * 0.3) + 
+            (nilaiUas * 0.4);
+
+var status;
+
+if (nilai >= 75) {
+    status = "lulus";
+} else {
+    status = "tidak lulus";
+}
+
+console.log(status);
+    </script> 
+    
+</body>
+</html>
